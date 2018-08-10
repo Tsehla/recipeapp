@@ -1,0 +1,25 @@
+
+<style>
+    input {
+        width: 50%;
+        height: 7vh;
+        margin: 1%;
+        margin-left: 25%;
+    }
+    button {
+        width: 50.5%;
+        height: 8vh;
+        margin-left: 1%;
+        margin-left: 25%;
+    }
+
+</style>
+<div style ='height: auto;width: auto; background-color: #f6f6f6'>
+<h2 style = 'color : gold; text-align: center' id = 'contact_heading'>Contact</h2>
+<div id = 'input_container'>
+<input type = 'name' #name placeholder = 'Please enter your name' id = 'name'><br>
+<input type = 'email' #email placeholder = 'Please enter you email' id ='email'><br>
+<input type = 'number' #number placeholder = 'Please enter you contact number' id = 'number'><br>
+<button (click) = 'input_box(name.value, email.value, number.value)'>Send</button>
+</div>
+</div>

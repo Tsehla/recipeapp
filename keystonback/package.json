@@ -1,0 +1,11 @@
+{
+  "name": "recieptapp",
+  "version": "1.0.0",
+  "description": "receipe app",
+  "main": "index.js",
+  "author": "Tsehla Nkhi",
+  "license": "MIT",
+  "dependencies": {
+    "keystone": "^4.0.0"
+  }
+}

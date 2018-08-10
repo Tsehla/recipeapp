@@ -1,0 +1,359 @@
+/* ------------- navigation -------------- */
+/*navi buttons */
+
+$navi_width : 11%;
+$navi_height : auto;
+$navi_logo_width : 15%;
+$navi_float_right : right;
+$navi_margin_right : 1%;
+$navi_text_align : center;
+$navi_container_height : 5vh;
+$navi_cursor : pointer;
+
+/*{
+    border: 1px solid brown;
+}*/
+a {
+    text-decoration: none;
+    //color: snow;
+    text-shadow: 3px 3px 6px black;
+}
+.nav_links{
+    color: snow;
+}
+
+#main_header_container {
+    
+    width: 100%;
+    height: 100vh;
+    color: snow;
+    box-shadow: 4px 4px 4px grey;
+}
+
+#navi_en_logo_container  {
+    width: 100%;
+    height: auto;
+     
+}
+
+#navi_container{
+    width: 90%;
+    height: $navi_container_height;
+    margin-left: 5%;
+    padding-top: 5vh;
+    
+    #header_logo {
+        display: inline-block;
+        width: $navi_logo_width;
+        height: $navi_height;
+        p {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        float : left;
+        text-align: $navi_text_align;
+        
+    }
+    #navi_intro {
+        display: inline-block;
+        width: $navi_width;
+        height: $navi_height;
+        p {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        float: $navi_float_right;
+        margin-right: $navi_margin_right;
+        text-align: $navi_text_align;
+        border-bottom: 0px solid red;
+        cursor: $navi_cursor;
+        
+    }   
+    #navi_recipe {
+        display: inline-block;
+        width: $navi_width;
+        height: $navi_height;
+        p {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        float: $navi_float_right;
+        margin-right: $navi_margin_right;
+        text-align: $navi_text_align;
+        border-bottom: 0px solid red;
+        cursor: $navi_cursor;
+        
+    }
+    #navi_gallery{
+        display: inline-block;
+        width: $navi_width;
+        height: $navi_height;
+        p {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        float: $navi_float_right;
+        margin-right: $navi_margin_right;
+        text-align: $navi_text_align;
+        border-bottom: 0px solid red;
+        cursor: $navi_cursor;
+    }
+    #navi_contact{
+        display: inline-block;
+        width: $navi_width;
+        height: $navi_height;
+        p {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        float: $navi_float_right;
+        margin-right: $navi_margin_right;
+        text-align: $navi_text_align;
+        border-bottom: 0px solid red;/*used to show current page*/
+        cursor: $navi_cursor;
+    }
+
+}
+
+    #mobile_navi {//mobi navi
+        width: 5vh;
+        height: 5.5vh;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        color: snow;
+        font-size: 5vh;
+        display: none;
+        text-shadow: 3px 3px 3px black;
+        
+    }
+
+
+
+/* navi text */
+
+$slider_contents_width : 45vw;
+$slider_contents_height :  auto;
+$slider_contents_margin_top : 20vh;
+$slider_contents_margin_left : 9vw;
+
+#slider_contents {
+    height: $slider_contents_height;
+    width: $slider_contents_width;
+    margin-top: $slider_contents_margin_top;
+    margin-left: $slider_contents_margin_left;
+    h1 {
+        width: 97%;
+        height: auto;
+        margin: 1%;
+    }
+    p {
+        width: 97%;
+        height: auto;
+        margin: 1%;
+    }
+    button {
+        width: 20vh;
+        height: 5vh;
+        margin: 1%;
+        background: transparent;
+        border: 2px aliceblue solid;
+        color: aliceblue;  
+        
+    }
+    
+    
+}
+
+/* -------------------- footer ------------------ */
+$margin_right : 1%;
+$margin_left : 1%;
+$footer_number_margin_right : 2%;
+$footer_number_width : 150px; /* control on break point !important */
+$footer_email_width : 200px;
+$footer_social_media_width : 100px;
+#footer_container {
+    width: 100vw;
+    height: 4vh;
+    padding-top: 8vh;  
+    margin-bottom: 8vh;
+    
+}
+#footer {
+    width: 100vw;
+    height: 4vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vh;
+
+}
+
+
+ #footer_logo {
+        width: 100px;
+        height: 100%;
+        float: left;
+        display: inline-block;
+        margin-left : 5vw;
+    }
+    #footer_number{
+        width: $footer_number_width;
+        height: 4vh;
+        float: right;
+        display: inline-block;
+        margin-right: 5vw;
+        margin-left : $margin_left;
+    }
+    #footer_email {
+        width: $footer_email_width;
+        height: 100%;
+        float: right;
+        display: inline-block;
+        margin-right: $margin_right;
+        margin-left : $margin_left;
+    }
+    #footer_social_media {
+        width: $footer_social_media_width;
+        height: 100%;
+        float: right;
+        display: inline-block;
+        margin-right: $margin_right;
+        margin-left : $margin_left;
+        
+    }
+
+//Media queries
+
+@media only screen and (max-width : 541px){
+    #mobile_navi {
+       display: block; 
+    }
+    #navi_container{
+        width: 100%;
+        height: auto;
+        #header_logo {
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            text-align: left;
+        }
+        #navi_intro {
+            display: block;
+            width: 100%;
+            height: 1px;
+            float: left;
+            margin-top: Calc(50%/4);
+            position: relative;
+            background-color: lightgray;
+            height: 6vh;
+            vertical-align: middle;
+            line-height: 6vh;
+            display: none;
+
+        }
+        
+        #navi_recipe {
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            margin-top: Calc(50%/4);
+            position: relative;
+            background-color: lightgray;
+            height: 6vh;
+            vertical-align: middle;
+            line-height: 6vh;
+            display: none;
+            
+            
+            
+        }
+        #navi_gallery {
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            margin-top: Calc(50%/4);
+            position: relative;
+            background-color: lightgray;
+            height: 6vh;
+            vertical-align: middle;
+            line-height: 6vh;
+            display: none;
+        }
+        #navi_contact {
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            margin-top: Calc(50%/4);
+            position: relative;
+            background-color: lightgray;
+            height: 6vh;
+            vertical-align: middle;
+            line-height: 6vh;
+            display: none;
+            
+        } 
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+
+    
+//footer 
+
+    
+    
+    #footer_logo {
+        display: block;
+        width: 100vw;
+        margin: 1vw;
+    }
+    #footer_number{
+        display: block;
+        width: 100vw;
+        margin: 1vw;
+    }
+    #footer_email {
+        display: block;
+        width: 100vw;
+        margin: 1vw;
+    }
+    #footer_social_media {
+        display: block !important;
+        width: 100vw;
+        margin: 1vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

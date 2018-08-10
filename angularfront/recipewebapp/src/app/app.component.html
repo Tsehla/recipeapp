@@ -1,0 +1,70 @@
+<!--  ------------------------------------- ->
+    HEADER WITH SLIDER  + MAIN NAVIGATION
+<!- -------------------------------------- -->
+
+<div id = 'main_header_container'>
+    <div id = 'navi_en_logo_container'><!-- navigation -->
+        <div id = 'navi_container'>
+            <div id = 'header_logo'>
+                <p style="width: auto;"><b>Hello</b>food</p>
+            </div>
+            <div id = 'navi_intro'>
+                <p style="" ><a href='' class ='nav_links' id = "nav_link_intro">Intro</a></p>
+            </div>
+            <div id = 'navi_recipe'>
+                <p style=""><a href="recipe" class ='nav_links' id = "nav_link_recipe">Recipe</a></p>
+            </div>
+            <div id = 'navi_gallery'>
+                <p style=""><a href="gallery" class ='nav_links' id = "nav_link_gallery">Gallery</a></p>
+            </div>
+             <div id = 'navi_contact'>
+                 <p style=""><a href="contact" class ='nav_links' id = "nav_link_contact">Contact</a></p>
+            </div>
+            
+        </div>
+    
+    
+    </div>
+    <div id = 'slider_contents'><!-- slidershow -->
+        <h1 id = 'slider_heading'></h1>
+        <p id = 'slider_text'></p>
+        <button id = 'slider_content_button'>
+            Read More
+        </button>
+    
+    </div>
+
+<!-- section link -->
+<a href='#start_content'>
+    <div id = 'section_triangle' style="position: absolute; top: 93.5vh; margin-left: 45vw;  width: 0; height: 0; border-left: 10vh solid transparent; border-right: 10vh solid transparent; border-bottom: 9vh solid white; cursor: pointer"><p style="color: black; position: relative; top: 0px; right: 5px">&or;</p></div>
+</a>
+
+</div>
+<div id = 'mobile_navi'(click) ='toogle_mobile_nav_menu()'><i class="fas fa-bars"></i></div>
+
+<!-- ------------------------------------------------------ ->
+                        changable content
+<!- ------------------------------------------------------ -->
+<div style ='height: auto;width: auto; background-color: #f6f6f6'>
+    <a name='start_content'></a>
+<router-outlet></router-outlet>
+    
+<!-- router-outlet name = 'gallery'></router-outlet -->
+
+</div>
+<!-- ------------------------------------------------------- ->
+                            footer 
+<!- ------------------------------------------------------- -->
+
+<div id = 'footer_container'>
+    <div id = 'footer'>
+        <div id = 'footer_logo'><b>Hello</b>food</div>
+        <div id = 'footer_number'>+27 21 555 5555</div>
+        <div id = 'footer_email'>info@hellocomputer.com</div>
+        <div id = 'footer_social_media'>
+            <span><i class="fab fa-twitter" style='border: 1px solid grey; border-radius: 50%; background-color: darkgray; color :dimgray;  margin: 0px 3px 0px 3px'></i></span>
+            <span><i class="fab fa-facebook-f" style='border: 1px solid grey; border-radius: 50%; background-color: darkgray; color :dimgray;  margin: 0px 3px 0px 3px'></i></span>
+            <span><i class="fab fa-instagram" style='border: 1px solid grey; border-radius: 50%; background-color: darkgray; color :dimgray; margin: 0px 3px 0px 3px'></i></span>
+        </div>
+    </div>
+</div>
